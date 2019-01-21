@@ -2,7 +2,7 @@
 
 namespace Rebing\Timber\Requests\Contexts;
 
-use Auth;
+use Sentinel;
 
 class UserContext extends AbstractContext
 {
@@ -14,10 +14,10 @@ class UserContext extends AbstractContext
             return $this->userContext;
         }
 
-        if (Auth::check()) {
-            $user = Auth::user();
+        if (Sentinel::check()) {
+            $user = Sentinel::user();
             $data = [
-                'id' => (string)Auth::id(),
+                'id' => (string)Sentinel::id(),
             ];
 
             if (isset($user->name)) {

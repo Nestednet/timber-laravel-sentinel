@@ -2,7 +2,7 @@
 
 namespace Rebing\Timber\Requests\Events;
 
-use Auth;
+use Sentinel;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\InteractsWithQueue;
