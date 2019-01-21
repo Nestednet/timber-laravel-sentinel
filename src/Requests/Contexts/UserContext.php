@@ -15,9 +15,9 @@ class UserContext extends AbstractContext
         }
 
         if (Sentinel::check()) {
-            $user = Sentinel::user();
+            $user = Sentinel::getUser();
             $data = [
-                'id' => (string)Sentinel::id(),
+                'id' => (string)Sentinel::getUser()->id,
             ];
 
             if (isset($user->name)) {
