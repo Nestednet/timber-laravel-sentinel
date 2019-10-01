@@ -17,8 +17,8 @@
     "homepage": "https://github.com/Nestednet/timber-laravel-sentinel",
     "keywords": ["Laravel", "Timber", "logging", "log"],
     "require": {
-        "php": ">=7.1",
-        "illuminate/support": "~5",
+        "php": ">=7.2",
+        "illuminate/support": "~6",
         "guzzlehttp/guzzle": "^6.3",
         "symfony/psr-http-message-bridge": "^1.1"
     },
